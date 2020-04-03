@@ -26,11 +26,12 @@ h3{border-bottom: 1px solid #c9cdd7;
   .hamburger{
     cursor:pointer;
   }
+  
   mat-grid-tile{
       top:100px;
   }
   element.style{
-    top:150px;
+    top:200px;
 
   }
 
@@ -41,3 +42,19 @@ h3{border-bottom: 1px solid #c9cdd7;
   #header1{
     top:60px;
   }
+  mat-nav-list{
+    
+    position: relative;
+    top: 15%;
+    
+
+  }
+  #para{
+    background-image: url(src/assets/img/decouvrir.jpg);
+   
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+ 

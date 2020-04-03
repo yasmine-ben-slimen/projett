@@ -241,7 +241,11 @@ section
 {
 	width: 193px;
 	height: 72px;
-	background: linear-gradient(to right, #487fee, #32fa95);
+	background: #a64bf4;
+  background: -webkit-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  background: -o-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  background: -moz-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  background: linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
 	text-align: center;
 	border-radius: 36px;
 	-webkit-transition: all 200ms ease;

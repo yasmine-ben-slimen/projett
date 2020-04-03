@@ -1,6 +1,10 @@
 import { Component, ViewChild, HostListener, ElementRef, AfterViewInit  } from '@angular/core';
 import { MatToolbar } from '@angular/material/toolbar';
 import { MatSidenav } from '@angular/material/sidenav';
+import { FormControl, Validators, FormGroup } from '@angular/forms';
+
+import 'jarallax';
+declare var jarallax: any;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -26,6 +30,11 @@ export class AppComponent {
       this.sidenav.fixedTopGap = 65;
       this.opened = true;
     }
+  }
+  ngAfterViewInit() {
+    jarallax(document.querySelectorAll('.jarallax'), {
+      speed: 0.2
+    });
   }
   @HostListener('window:resize', ['$event'])
   onResize(event) {

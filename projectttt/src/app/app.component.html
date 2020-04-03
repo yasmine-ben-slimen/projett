@@ -11,24 +11,23 @@
   <mat-sidenav   #sidenav [mode]="isBiggerScreen() ? 'over' : 'side'" [(opened)]="opened" [fixedInViewport]="true"
     [fixedTopGap]>
     <mat-nav-list>
-      <a mat-list-item>
-        <mat-icon></mat-icon> Dashboard
+      <a href="#home" mat-list-item>
+        <mat-icon>home</mat-icon>Home
       </a>
-      <a mat-list-item>
-        <mat-icon></mat-icon> User Profile
+      <a href="#discover" mat-list-item>
+        <mat-icon>search</mat-icon> Discover Us
       </a>
-      <a mat-list-item>
-        <mat-icon></mat-icon> Table List
+      <a href="#recent" mat-list-item>
+        <mat-icon>content_paste</mat-icon> Recent adds
       </a>
-      <a mat-list-item>
-        <mat-icon></mat-icon> Typography
+      <a href="#para" mat-list-item>
+        <mat-icon>account_circle</mat-icon> Registration
       </a>
-      <a mat-list-item>
-        <mat-icon></mat-icon> Maps
+      <a href="#para"  mat-list-item>
+        <mat-icon>lock</mat-icon> Login
       </a>
-      <a mat-list-item>
-        <mat-icon></mat-icon><a href="/app/contact-component/contact-component.component.html" >Sign Up</a>
-      </a>
+      
+       
     </mat-nav-list>
   </mat-sidenav>
 
@@ -41,30 +40,30 @@
     <!-- Angular material cards -->
     <div class="productCards">
       <mat-grid-list cols="4" rowHeight="200px">
-        <mat-grid-tile [colspan]="4" [rowspan]="3">
+        <mat-grid-tile [colspan]="4" [rowspan]="3" id="home">
           <mat-grid-tile-header id="header1"[style.background]="'grey'">
-            <h3><i class="fa fa-angle-right"></i> Bienvenue</h3>
+            <h3><i class="fa fa-angle-right"></i> Welcome</h3>
           </mat-grid-tile-header>
           <app-carousel></app-carousel>
 
 
 
         </mat-grid-tile>
-        <mat-grid-tile [colspan]="4" [rowspan]="3">
+        <mat-grid-tile [colspan]="4" [rowspan]="3" id="discover">
           <mat-grid-tile-header [style.background]="'grey'">
-            <h3><i class="fa fa-angle-right"></i> About as</h3>
+            <h3><i class="fa fa-angle-right"></i> Fiew words about us</h3>
 
           </mat-grid-tile-header>
             <app-propos-component></app-propos-component>
         </mat-grid-tile>
-        <mat-grid-tile [colspan]="4" [rowspan]="5">
+        <mat-grid-tile id="recent" [colspan]="4" [rowspan]="5">
           <mat-grid-tile-header [style.background]="'grey'">
-            <h3><i class="fa fa-angle-right"></i> Nouveautés</h3>
+            <h3><i class="fa fa-angle-right"></i> Recent Properties</h3>
           </mat-grid-tile-header>
             <app-new-component></app-new-component>
         </mat-grid-tile>
 
-        <mat-grid-tile [colspan]="4" [rowspan]="4">
+        <mat-grid-tile [colspan]="4" [rowspan]="4" >
           <mat-grid-tile-header [style.background]="'grey'">
             <h3><i class="fa fa-angle-right"></i> Bienvenue</h3>
           </mat-grid-tile-header>
@@ -73,24 +72,19 @@
 
         <mat-grid-tile [colspan]="4" [rowspan]="4">
           <mat-grid-tile-header [style.background]="'grey'">
-            <h3><i class="fa fa-angle-right"></i> Bienvenue</h3>
+            <h3><i class="fa fa-angle-right"></i> What our clients say about us</h3>
           </mat-grid-tile-header>
           <app-chat></app-chat>
         </mat-grid-tile>
 
-        <mat-grid-tile [colspan]="4" [rowspan]="4">
+        <mat-grid-tile [colspan]="4" [rowspan]="4" id ="para"class="view intro jarallax" >
           <mat-grid-tile-header [style.background]="'grey'">
-            <h3><i class="fa fa-angle-right"></i> Contact</h3>
+            <h3><i class="fa fa-angle-right"></i>Registration/Login</h3>
           </mat-grid-tile-header>
          <app-contact-component></app-contact-component>
         </mat-grid-tile>
 
-        <mat-grid-tile [colspan]="4" [rowspan]="4">
-          <mat-grid-tile-header [style.background]="'grey'">
-            <h3><i class="fa fa-angle-right"></i> Reserve</h3>
-          </mat-grid-tile-header>
-         <app-reservation-component></app-reservation-component>
-        </mat-grid-tile>
+       
         
       </mat-grid-list>
 

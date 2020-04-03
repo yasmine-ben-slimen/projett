@@ -17,6 +17,7 @@ import { MatCardModule }from '@angular/material/card';
 import { MatTooltipModule }from '@angular/material/tooltip';
 import { MatTableModule }from '@angular/material/table';
 import { MatPaginatorModule }from '@angular/material/paginator';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
    
@@ -38,7 +39,7 @@ import { MatPaginatorModule }from '@angular/material/paginator';
       MatSelectModule,
       MatRadioModule,
       MatDatepickerModule,
-      
+      MatDialogModule,
       MatChipsModule,
       MatTooltipModule,
       MatTableModule,
@@ -62,7 +63,8 @@ import { MatPaginatorModule }from '@angular/material/paginator';
       MatTooltipModule,
       MatTableModule,
       MatPaginatorModule,
-      MatCardModule
+      MatCardModule,
+      MatDialogModule
    ],
    providers: [
       MatDatepickerModule,
