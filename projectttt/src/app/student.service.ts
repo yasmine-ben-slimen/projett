@@ -1,13 +1,16 @@
 import { Injectable } from '@angular/core';
 
-import { HttpClient } from '@angular/common/http';
+import { HttpClient ,HttpHeaders
+} from '@angular/common/http';
 import { Observable } from 'rxjs';
 
+let headers = new HttpHeaders({ 'Access-Control-Allow-Origin': '*' });
 @Injectable({
   providedIn: 'root'
 })
+
 export class StudentService {
-  private baseUrl = 'http://localhost:8080/api/etudiants';
+  private baseUrl = 'http://localhost:8080/api/v1/etudiants';
 
   constructor(private http: HttpClient) { }
 
